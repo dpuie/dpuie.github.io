@@ -20,4 +20,4 @@ function updateTitle("title") {
   job.innerHTML = title;
 }
 variableExamples();
-updateTitle("web Developer @ RWS");
+// updateTitle("web Developer @ RWS");
