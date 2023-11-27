@@ -1,12 +1,12 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"name": "dpuie.github.io",
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "name": "dpuie.github.io",
+      "path": "."
+    }
+  ],
+  "settings": {}
 }
