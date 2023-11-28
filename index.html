@@ -7,74 +7,104 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Denisa.</h1>
+    <header>
+      <h1>Denisa Puie</h1>
+      <img height="100" src="images/20180406_143026.jpg" alt="selfie" />
+      <p id="job-title">Interpreter @ DA Languages</p>
+      <ul id="top-menu-bar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#" class="active">PROJECTS</a></li>
+        <li><a href="#">LANGUAGES</a></li>
+      </ul>
+    </header>
 
-<h2>Denisa Puie</h2>
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for=""></label>
+            </div>
+            <label for="useremail">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="useremail"
+              placeholder="your@email.com"
+              required
+            />
+            <div>
+              <label for="username">your name</label>
+              <input
+                type="text"
+                name="name"
+                id="username"
+                placeholder="write your name here..."
+              />
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+        <section>
+          <p>start server: CTRL+SHIFT+P+BROWSER SYNC+/+ENTER</p>
+        </section>
+      </div>
+      <div id="main">
+        <h2>Skills</h2>
 
-<img width="100" src="images/20180406_143026.jpg" alt="selfie" />
+        <ul>
+          <li class="favorite">HTML</li>
+          <li>CSS</li>
+          <li class="favorite">JS</li>
+        </ul>
 
-<p id="job-title"> Interpreter @ DA Languages</p>
-<ul id="top-menu-bar">
-  <li><a href="#">HOME</a></li>
-  <li><a href="#">SKILLS</a></li>
-  <li><a href="#" class="active">PROJECTS</a></li> 
-  <li><a href="#">LANGUAGES</a></li>
-</ul>
-<h2>Skills</h2>
+        <h2>Known Languages</h2>
 
-<ul>
-  <li class="favorite"> HTML </li>
-  <li>CSS</li>
-  <li class="favorite">JS</li> 
-</ul>
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <td class="favorite">Romanian</td>
+          <td>Native</td>
+          <tr>
+            <td>English</td>
+            <td>Profesional</td>
+          </tr>
+        </table>
+      </div>
+    </section>
 
-<h2>Known Languages</h2>
+    <footer>
+      Open my
+      <a
+        href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+        target="_blank"
+        >Linkedin</a
+      >
+      account.
+    </footer>
 
-<table border="1">
-  <tr>
-    <th>Language</th>
-    <th>Level</th>
-  </tr>
-  <tr>
-    <td>Romanian</td>
-    <td>Native</td>
-  </tr>
-  <tr>
-    <td>English</td>
-    <td>Profesional</td>
-  </tr>
-</table>
+    <script>
+      console.info(2 + 3);
+      console.warn("denisa puie");
 
-Open my
-<a
-  href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
-  target="_blank"
-  >Linkedin</a
-  account.
-  
+      var employed = true;
+      var age = 18;
+      console.log("angajat:", employed);
+      employed = false;
+      console.log("angajat:", employed);
+      employed = "da";
+      console.log("angajat:", employed);
 
-<form action="secretara.html">
-  <h2>contact</h2>
+      var skills = ["html", "css"];
+      console.debug("tipul variabilei skills", typeof skills);
 
-  <div>
-    <label for="x">Email</label>
-    <input type="text" name="email" id="useremail" 
-    placeholder="your@email.com" 
-    required />
-  </div>
-
-  <div>
-    <label for="y">Your name</label>
-    <input type="text" name="name" id="username" 
-    placeholder="enter your name"
-    required / >
-  </div>
-
-  <button type="submit">send</button>
-</form>
-
-<script src="examples.js"></script>
-
+      var job = document.getElementById("job-title");
+      console.warm("job", job);
+      console.info(typeof job);
+    </script>
   </body>
-
 </html>
