@@ -62,49 +62,50 @@
 
         <h2>Known Languages</h2>
 
-        <table border="1">
-          <tr>
-            <th>Language</th>
-            <th>Level</th>
-          </tr>
-          <td class="favorite">Romanian</td>
-          <td>Native</td>
-          <tr>
-            <td>English</td>
-            <td>Profesional</td>
-          </tr>
-        </table>
-      </div>
-    </section>
+<table border="1">
+  <tr>
+    <th>Language</th>
+    <th>Level</th>
+  </tr>
+  <tr>
+    <td>Romanian</td>
+    <td>Native</td>
+  </tr>
+  <tr>
+    <td>English</td>
+    <td>Profesional</td>
+  </tr>
+</table>
 
-    <footer>
-      Open my
-      <a
-        href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
-        target="_blank"
-        >Linkedin</a
-      >
-      account.
-    </footer>
+Open my
+<a
+  href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+  target="_blank"
+  >Linkedin</a
+  account.
+  
 
-    <script>
-      console.info(2 + 3);
-      console.warn("denisa puie");
+<form action="secretara.html">
+  <h2>contact</h2>
 
-      var employed = true;
-      var age = 18;
-      console.log("angajat:", employed);
-      employed = false;
-      console.log("angajat:", employed);
-      employed = "da";
-      console.log("angajat:", employed);
+  <div>
+    <label for="x">Email</label>
+    <input type="text" name="email" id="useremail" 
+    placeholder="your@email.com" 
+    required />
+  </div>
 
-      var skills = ["html", "css"];
-      console.debug("tipul variabilei skills", typeof skills);
+  <div>
+    <label for="y">Your name</label>
+    <input type="text" name="name" id="username" 
+    placeholder="enter your name"
+    required / >
+  </div>
 
-      var job = document.getElementById("job-title");
-      console.warm("job", job);
-      console.info(typeof job);
-    </script>
+  <button type="submit">send</button>
+</form>
+
+<script src="examples.js"></script>
+
   </body>
 </html>
