@@ -11,8 +11,28 @@ footer {
   margin: 2px;
   border: 2px solid red;
 }
-#sode-menu section {
+#side-menu section {
   border-color: green;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+#side-menu {
+  flex: 1;
+}
+#main {
+  flex: 3;
 }
 td {
   padding: 4px;
