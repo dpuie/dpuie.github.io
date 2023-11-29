@@ -7,89 +7,91 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Denisa.</h1>
-
-    <h2>Denisa Puie</h2>
-
-    <img width="100" src="images/20180406_143026.jpg" alt="selfie" />
-
-    <p id="job-title">Interpreter @ DA Languages</p>
-    <ul id="top-menu-bar">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#" onclick="showSkills()">SKILLS</a></li>
-      <li><a href="#" class="active">PROJECTS</a></li>
-      <li><a href="#" onclick="showLanguages()">LANGUAGES</a></li>
-    </ul>
-
-    <div style="display: none">
-      <h2>home</h2>
-      <p>Welcome</p>
-    </div>
-
-    <div style="display: none">
-      <h2>Skills</h2>
-      <ul>
-        <li class="favorite">HTML</li>
-        <li>CSS</li>
-        <li class="favorite">JS</li>
+    <header>
+      <h1>Denisa Puie</h1>
+      <img height="100" src="images/20180406_143026.jpg" alt="selfie" />
+      <p id="job-title">Interpreter @ DA Languages</p>
+      <ul id="top-menu-bar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#" class="active">PROJECTS</a></li>
+        <li><a href="#">LANGUAGES</a></li>
       </ul>
-    </div>
+    </header>
 
-    <div style="display: none id= languages">
-      <h2>Projects</h2>
-      <p>...</p>
-    </div>
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for=""></label>
+            </div>
+            <label for="useremail">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="useremail"
+              placeholder="your@email.com"
+              required
+            />
+            <div>
+              <label for="username">your name</label>
+              <input
+                type="text"
+                name="name"
+                id="username"
+                placeholder="write your name here..."
+                required
+              />
+            </div>
 
-    <div id="languages" style="display: none">
-      <h2>Known Languages</h2>
-    </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
 
-    <table border="1">
-      <tr>
-        <th>Language</th>
-        <th>Level</th>
-      </tr>
-      <tr>
-        <td>Romanian</td>
-        <td>Native</td>
-      </tr>
-      <tr>
-        <td>English</td>
-        <td>Profesional</td>
-      </tr>
-    </table>
-
-    Open my
-    <a
-      href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
-      target="_blank"
-      >Linkedin
-    </a>
-    account.
-
-    <form action="secretara.html">
-      <h2>contact</h2>
-
-      <div>
-        <label for="x">Email</label>
-        <input
-          type="text"
-          name="email"
-          id="useremail"
-          placeholder="your@email.com"
-          required
-        />
+        <section>
+          <p>start server: CTRL+SHIFT+P+BROWSER SYNC+/+ENTER</p>
+        </section>
       </div>
+      <div id="main">
+        <h2>Skills</h2>
 
-      <div>
-        <label for="y">Your name</label>
-        <input type="text" name="name" id="username" placeholder="enter your
-        name" required / >
+        <ul>
+          <li class="favorite">HTML</li>
+          <li>CSS</li>
+          <li class="favorite">JS</li>
+        </ul>
+
+        <h2>Known Languages</h2>
+
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>Romanian</td>
+            <td>Native</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Profesional</td>
+          </tr>
+        </table>
       </div>
+    </section>
 
-      <button type="submit">send</button>
-    </form>
+    <footer>
+      Open my
+      <a
+        href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+        target="_blank"
+        >Linkedin</a
+      >
+      account.
+    </footer>
 
-    <script src="index.js"></script>
+    <script src="examples.js"></script>
   </body>
 </html>
