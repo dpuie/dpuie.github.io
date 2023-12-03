@@ -8,23 +8,14 @@
   </head>
   <body>
     <header>
-      <div style="display: flex">
-        <div>
-          <img height="100" src="images/20180406_143026.jpg" alt="selfie" />
-        </div>
-        <div>
-          <h1>Denisa Puie</h1>
-          <p id="job-title">Interpreter @ DA Languages</p>
-        </div>
-      </div>
-
+      <h1>Denisa Puie</h1>
+      <img height="100" src="images/20180406_143026.jpg" alt="selfie" />
+      <p id="job-title">Interpreter @ DA Languages</p>
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showHome()">HOME</a></li>
-        <li><a href="#" onclick="showSkills()">SKILLS</a></li>
-        <li>
-          <a href="#" onclick="showProjects()" class="active">PROJECTS</a>
-        </li>
-        <li><a href="#" onclick="showLanguages()">LANGUAGES</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#" class="active">PROJECTS</a></li>
+        <li><a href="#">LANGUAGES</a></li>
       </ul>
     </header>
 
@@ -34,23 +25,23 @@
           <form action="secretara.html">
             <h2>Contact</h2>
             <div>
-              <label for="userEmail">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="useremail"
-                placeholder="your@email.com"
-                required
-              />
+              <label for=""></label>
             </div>
+            <label for="useremail">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="useremail"
+              placeholder="your@email.com"
+              required
+            />
             <div>
-              <label for="userName">Your Name</label>
+              <label for="username">your name</label>
               <input
                 type="text"
                 name="name"
-                id="userName"
-                placeholder="Enter you name"
-                required
+                id="username"
+                placeholder="write your name here..."
               />
             </div>
             <button type="submit">Send</button>
@@ -60,41 +51,30 @@
           <p>start server: CTRL+SHIFT+P+BROWSER SYNC+/+ENTER</p>
         </section>
       </div>
-      <div>
-        id "main">
-        <div id="home" style="display: none">
-          <h2>Home</h2>
-          <p>Welcome</p>
-        </div>
-        <div id="Skills" style="display: none">
-          <h2>Skills</h2>
-          <ul>
-            <li class="favorite">HTML</li>
-            <li>CSS</li>
-            <li class="favorite">JS</li>
-          </ul>
-        </div>
-        <div id="PROJECTS">
-          <h2>PROJECTS</h2>
-          <p>...</p>
-        </div>
-        <div style="display: none" id="Languages">
-          <h2>Known Languages</h2>
-          <table border="1">
-            <tr>
-              <th>Language</th>
-              <th>Level</th>
-            </tr>
-            <tr>
-              <td class="favorite">Romanian</td>
-              <td>Native</td>
-            </tr>
-            <tr>
-              <td>English</td>
-              <td>Profesional</td>
-            </tr>
-          </table>
-        </div>
+
+      <div id="main">
+        <h2>Skills</h2>
+
+        <ul>
+          <li class="favorite">HTML</li>
+          <li>CSS</li>
+          <li class="favorite">JS</li>
+        </ul>
+
+        <h2>Known Languages</h2>
+
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <td class="favorite">Romanian</td>
+          <td>Native</td>
+          <tr>
+            <td>English</td>
+            <td>Profesional</td>
+          </tr>
+        </table>
       </div>
     </section>
 
@@ -108,6 +88,24 @@
       account.
     </footer>
 
-    <script src="index.js"></script>
+    <script>
+      console.info(2 + 3);
+      console.warn("denisa puie");
+
+      var employed = true;
+      var age = 18;
+      console.log("angajat:", employed);
+      employed = false;
+      console.log("angajat:", employed);
+      employed = "da";
+      console.log("angajat:", employed);
+
+      var skills = ["html", "css"];
+      console.debug("tipul variabilei skills", typeof skills);
+
+      var job = document.getElementById("job-title");
+      console.warm("job", job);
+      console.info(typeof job);
+    </script>
   </body>
 </html>

@@ -18,6 +18,7 @@ body {
 #main {
   flex: 3;
 }
+
 td {
   padding: 4px;
 }
@@ -35,7 +36,7 @@ th {
   background-color: #334455;
   color: #fff;
   margin: 0;
-  padding: 2px;
+  padding: 2;
 }
 #top-menu-bar li {
   display: inline-block;
@@ -46,9 +47,9 @@ th {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 5px 10px;
+  padding: 5 10px;
   border-radius: 4px;
-  transition: 0.5s;
+  transition: 0.5ms;
 }
 
 #top-menu-bar a:visited {
