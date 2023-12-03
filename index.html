@@ -42,18 +42,16 @@
                 name="name"
                 id="username"
                 placeholder="write your name here..."
-                required
               />
             </div>
-
             <button type="submit">Send</button>
           </form>
         </section>
-
         <section>
           <p>start server: CTRL+SHIFT+P+BROWSER SYNC+/+ENTER</p>
         </section>
       </div>
+
       <div id="main">
         <h2>Skills</h2>
 
@@ -70,10 +68,8 @@
             <th>Language</th>
             <th>Level</th>
           </tr>
-          <tr>
-            <td>Romanian</td>
-            <td>Native</td>
-          </tr>
+          <td class="favorite">Romanian</td>
+          <td>Native</td>
           <tr>
             <td>English</td>
             <td>Profesional</td>
@@ -92,6 +88,24 @@
       account.
     </footer>
 
-    <script src="examples.js"></script>
+    <script>
+      console.info(2 + 3);
+      console.warn("denisa puie");
+
+      var employed = true;
+      var age = 18;
+      console.log("angajat:", employed);
+      employed = false;
+      console.log("angajat:", employed);
+      employed = "da";
+      console.log("angajat:", employed);
+
+      var skills = ["html", "css"];
+      console.debug("tipul variabilei skills", typeof skills);
+
+      var job = document.getElementById("job-title");
+      console.warm("job", job);
+      console.info(typeof job);
+    </script>
   </body>
 </html>
