@@ -1,14 +1,14 @@
 function variableExamples() {
   console.info(2 + 3);
-  console.warn("denisa");
+  console.warn("Denisa Puie");
 
   var employed = true;
   var age = 18;
-  console.log("angajat:", employed);
+  console.log("Angajat:", employed);
   employed = false;
-  console.log("angajat:", employed);
+  console.log("Angajat:", employed);
   employed = "da";
-  console.log("angajat:", employed);
+  console.log("Angajat:", employed);
 
   var skills = ["html", "css"];
   console.debug("tipul variabilei skills", typeof skills);
@@ -20,4 +20,4 @@ function updateTitle(title) {
   job.innerHTML = title;
 }
 variableExamples();
-updateTitle("web Developer @ RWS");
+updateTitle("Web Developer @ RWS");
