@@ -1,3 +1,5 @@
 # dpuie.github.io
 
-my personal CV
+## Live
+
+[dpuie.github.io] (https://dpuie.github.io/)

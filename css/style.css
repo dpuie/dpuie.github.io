@@ -35,7 +35,7 @@ th {
   background-color: #334455;
   color: #fff;
   margin: 0;
-  padding: 2;
+  padding: 2px;
 }
 #top-menu-bar li {
   display: inline-block;
@@ -46,9 +46,9 @@ th {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  padding: 5 10px;
+  padding: 5px 10px;
   border-radius: 4px;
-  transition: 0.5ms;
+  transition: 0.5s;
 }
 
 #top-menu-bar a:visited {
