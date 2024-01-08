@@ -21,11 +21,13 @@ function showPage(id) {
   activePage = id;
 }
 function initEvent() {
-  var toolbar = document.querySelector("top-menu-bar ");
+  var toolbar = document.querySelector("#top-menu-bar ");
   toolbar.addEventListener("click", function (e) {
-    var page = e.target.innerHTML.toLowerCase();
-    console.warn("event", page);
-    showPage(page);
+    if (e.target.matches("a")) {
+      var page = e.target.innerHTML.toLowerCase();
+      console.warn("event", page);
+      showPage(page);
+    }
   });
 }
 
