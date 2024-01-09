@@ -15,6 +15,7 @@ function variableExamples() {
 }
 function updateTitle(title) {
   var job = document.getElementById("job-title");
+  console.warn("job", job);
   console.warn("job", job, title);
   console.info(typeof job);
   job.innerHTML = title;

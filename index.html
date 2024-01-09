@@ -19,12 +19,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showPage('HOME')">HOME</a></li>
-        <li><a href="#" onclick="showPage('SKILLS')">SKILLS</a></li>
-        <li>
-          <a href="#" onclick="showPage('PROJECTS')" class="active">PROJECTS</a>
-        </li>
-        <li><a href="#" onclick="showPage ('LANGUAGES')">LANGUAGES</a></li>
+        <li><a href="#" data-page="home">🏡</a></li>
+        <li><a href="#" data-page="skills">Skills</a></li>
+        <li><a href="#" data-page="projects">Projects</a></li>
+        <li><a href="#" data-page="languages">Languages</a></li>
       </ul>
     </header>
 
@@ -63,12 +61,13 @@
       </div>
 
       <div id="main">
-        <div id="HOME" class="page">
-          <p><welcome...</p>
+        <div id="home" class="page">
+          <h2>Home</h2>
+          <p><Welcome...</p>
         </div>
 
         <div id="skills" class="page">
-          <h2>SKILLS</h2>
+          <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
             <li>CSS</li>
@@ -76,12 +75,12 @@
           </ul>
         </div>
 
-        <div id="PROJECTS" class="page">
-          <h2>PROJECTS</h2>
+        <div id="projects" class="page">
+          <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <div id="LANGUAGES" class="page">
+        <div id="languages" class="page">
           <h2>Known Languages</h2>
           <table border="1">
             <tr>
