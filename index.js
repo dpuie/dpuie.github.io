@@ -1,59 +1,85 @@
 // variable publice
-var activePage = "skills";
+let activePage = "skills";
 
 // functii publice
+function $(selector) {
+  const el = document.querySelector(selector);
+  // console.info("%o found:", selector, el);
+  return el;
+}
+
 function hide(id) {
-  console.info("hide", id);
-  document.getElementById(id).style.display = "none";
+  // console.info("hide", id);
+  $("#" + id).style.display = "none";
 }
 
 function show(id) {
-  console.info("show", id);
-  var page = document.getElementById(id);
-  console.debug("show page", page);
+  // console.info("show", id);
+  const page = $(`#${id}`);
+  // console.debug("show page", page);
   page.style.display = "block";
 }
 
 function showPage(id) {
-  console.info("show page", id);
-  var prevLink = document.querySelector("a[data-page=" + activePage + "]");
+  // console.info("show page", id);
+  const prevLink = $("a[data-page=" + activePage + "]");
   prevLink.classList.remove("active");
   hide(activePage);
 
-  var nextLink = document.querySelector(`a[data-page=${id}]`);
+  const nextLink = $(`a[data-page=${id}]`);
   nextLink.classList.add("active");
   show(id);
   activePage = id;
 }
 
 function initEvents() {
-  var toolbar = document.querySelector("#top-menu-bar");
-  toolbar.addEventListener("click", function (e) {
+  const toolbar = $("#top-menu-bar");
+  toolbar.addEventListener("click", (e) => {
     if (e.target.matches("a")) {
-      var page = e.target.dataset.page;
-      console.warn("click", page);
+      const page = e.target.dataset.page;
+      console.warn("click %o", page);
       showPage(page);
     }
   });
 }
 
-function showSkills() {
-  var ul = document.querySelector("#skills ul");
-  ul.innerHTML = "<li>HTML</li>";
-  ul.innerHTML = ul.innerHTML + "<li>CSS</li>";
-  ul.innerHTML += "<li>JS</li>";
+function sortSkillsByEndorcements(a, b) {
+  console.info("sort", a, b);
+  return b.endorcements - a.endorcements;
+}
 
-  var skills = ["HTML", "CSS", "JS"];
+function sortByName(a, b) {
+  return a.name.localeCompare(b.name);
+}
 
-  var text = skills.map(function (skill) {
-    console.info("inside %o map", skill);
-    return `<li>${skill}</li>`;
+function showSkills(skills) {
+  //skills.sort(sortSkillsByEndorcements);
+  skills.sort(sortByName);
+  const ul = $("#skills ul");
+
+  const text = skills.map((skill) => {
+    let cls = "";
+    if (skill.favorite == true) {
+      cls = "favorite";
+    }
+
+    console.info("%o (%o)", skill.name, cls);
+    return `<li class="${cls}">${skill.name} <span> - ${skill.endorcements}</span></li>`;
   });
   console.warn(text);
 
   ul.innerHTML = text.join("");
 }
 
+function loadSkills() {
+  fetch("skills.json").then((r) => {
+    r.json().then((skills) => {
+      showSkills(skills);
+    });
+  });
+}
+
 // excutii
 showPage(activePage);
 initEvents();
+loadSkills();

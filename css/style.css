@@ -84,3 +84,7 @@ top-menu-bar a.active,
 td.favorite {
   font-weight: normal;
 }
+
+#skills li span {
+  color: gray;
+}
